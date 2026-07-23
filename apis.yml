@@ -1,8 +1,27 @@
 aid: abelzeta-pharma
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/abelzeta-pharma.png
 name: AbelZeta Pharma
-description: 'AbelZeta Pharma is a company surfaced as a portfolio company of hongshan and added to the
-  API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'AbelZeta Pharma is a global clinical-stage cell therapy company discovering,
+  developing, and manufacturing T-cell-based immunotherapeutics for cancer and immunological
+  diseases. Its pipeline centers on Chimeric Antigen Receptor (CAR)-T cell technology
+  across hematologic malignancies, solid tumors, and inflammatory and immunological
+  conditions. Backed by Hongshan (formerly Sequoia Capital China), AbelZeta develops
+  personalized immune cell therapies that empower patients'' own immune systems to
+  address unmet medical needs, with operations in the United States (Maryland) and
+  China. AbelZeta does not currently publish a public developer API; this profile
+  captures the company''s corporate web presence and identity within the API Evangelist
+  network.'
 url: https://raw.githubusercontent.com/api-evangelist/abelzeta-pharma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,9 +35,33 @@ modified: '2026-07-17'
 tags:
 - Company
 - Healthcare
+- Biotechnology
+- Cell Therapy
+- Immunotherapy
+- CAR-T
+- Pharmaceuticals
+- Oncology
 apis: []
+common:
+- type: DomainSecurity
+  url: security/abelzeta-pharma-domain-security.yml
+- type: Website
+  url: https://www.abelzeta.com/
+- type: Blog
+  url: https://www.abelzeta.com/newsroom/
+- type: Support
+  url: https://www.abelzeta.com/contact/
+- type: PrivacyPolicy
+  url: https://www.abelzeta.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.abelzeta.com/terms-and-conditions/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
